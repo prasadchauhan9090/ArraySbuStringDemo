@@ -1,30 +1,26 @@
-public class SubString {
+import java.util.ArrayList;
 
+public class SubString {
 
 
     public static void main(String args[]) {
 
 
-        String ar="PRASAD";
+        String s = "PRASAD CHAUHAN";
+        int str = s.length();
 
-       int s=ar.length();
+        ArrayList<String> dd = new ArrayList<>();
 
-        for(int i=0;i<s;i++)
-        {
-            for(int j=0;j<s;j++)
-            {
-                for(int k=i;k<j;k++)
-                {
+        for (int i = 0; i < str; i++) {
+            for (int j = i; j < str; j++) {
+                String temp = s.substring(i, j + 1);
 
-                    System.out.print(ar.charAt(k) +" ");
+                dd.add(temp + " ");
 
-                }
-                System.out.println();
             }
+
+
         }
-
-
-
-
+        System.out.println(dd);
     }
 }
