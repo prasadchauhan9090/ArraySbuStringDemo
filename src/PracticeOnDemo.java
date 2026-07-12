@@ -9,17 +9,16 @@ public class PracticeOnDemo {
         {
             for(int j=i;j<n;j++)
             {
-                System.out.println(i+" "+j);
+              //  System.out.println(i+" "+j);
                 int temp=0;
                 for(int k=i;k<=j;k++)
                 {
-                    System.out.print(arr[k]+" ");
                     temp=temp+arr[k];
                 }
-                System.out.print(temp);
-                System.out.println();
+                ans=Math.max(ans,temp);
             }
         }
+        System.out.print("MAX OF THE GIVEN NUMBER IS:  "+ans);
 
     }
 }
